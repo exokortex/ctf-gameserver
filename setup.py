@@ -19,8 +19,6 @@ class ctf_gameserver_install(install):
 
         if not self.dry_run:
             bindir = self.install_scripts
-            if bindir.startswith(self.root):
-                bindir = bindir[len(self.root):]
 
             systemddir = os.path.join(self.root, "lib/systemd/system")
 
