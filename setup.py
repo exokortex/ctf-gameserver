@@ -48,8 +48,7 @@ setup(name='CTF Gameserver',
           'django',
           'markdown',
           'requests',
-          'pil',
-          'systemd'
+          'pillow',
       ],
       packages=[
           'ctf_gameserver.checker',
