@@ -15,7 +15,7 @@ MACLEN = 80
 # length of the Payload (in bytes)
 PAYLOADLEN = 8
 # flaggenprefix
-PREFIX = "FAUST"
+PREFIX = "KNCTF"
 # gültigkeit in sekunden
 VALID = 900
 
