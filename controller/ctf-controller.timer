@@ -2,7 +2,7 @@
 Description=FAUST-CTF: Regularly start game ticks
 
 [Timer]
-OnCalendar=*-*-* *:00/03:00
+OnCalendar=*-*-* *:00/01:00
 AccuracySec=5s
 
 [Install]
