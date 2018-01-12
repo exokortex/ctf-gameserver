@@ -130,7 +130,7 @@ class FlagHandler(asynchat.async_chat):
 
 
     def _banner(self):
-        self.push(u"FAUSTCTF Flagserver\n"
+        self.push(u"KaindorfCTF Flagserver\n"
                   u"One flag per line please!\n".encode('utf-8'))
 
 
