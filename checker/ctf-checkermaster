@@ -120,6 +120,9 @@ def run_checker(service, team, tick, checker, ippattern, loglevel, dbconnection)
             line = line.decode('us-ascii').split()
             logging.debug(repr(line))
 
+            if len(line) == 0:
+                continue
+
             if "FLAG" == line[0]:
                 newflag = do_flag(line, service, team)
                 process.stdin.write(newflag.encode('us-ascii'))
