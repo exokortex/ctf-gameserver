@@ -20,7 +20,7 @@ class ctf_gameserver_install(install):
         if not self.dry_run:
             bindir = self.install_scripts
 
-            systemddir = os.path.join("/usr/lib/systemd/system")
+            systemddir = os.path.join(self.root, "lib/systemd/system")
 
             for servicefile in self._servicefiles:
                 service = os.path.split(servicefile)[1]
