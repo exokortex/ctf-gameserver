@@ -12,13 +12,15 @@ class ctf_gameserver_install(install):
         'checker/ctf-checkermaster@.service',
         'controller/ctf-controller.service',
         'controller/ctf-scoring.service',
+        'controller/ctf-controller.timer'
         ]
 
     def run(self):
         install.run(self)
 
         if not self.dry_run:
-            bindir = self.install_scripts
+            #bindir = self.install_scripts
+            bindir = "/opt/game/ENV/bin"
 
             systemddir = os.path.join("/usr/lib/systemd/system")
 
